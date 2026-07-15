@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#ef0014" />
+    <title>Paper That Remains</title>
+    <link rel="preload" href="./public/home-background.png" as="image" />
+    <link rel="preload" href="./public/home-fragments.png" as="image" />
+    <link rel="preload" href="./public/home-paper-group.png" as="image" />
+    <link rel="preload" href="./public/home-that-group.png" as="image" />
+    <link rel="preload" href="./public/home-remains-pattern.png" as="image" />
+    <link rel="preload" href="./public/home-remains-word.png" as="image" />
+    <link rel="preload" href="./public/home-start.png" as="image" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="page-shell">
+      <section class="design home-design" aria-label="Paper That Remains interactive title screen">
+        <img class="home-background" src="./public/home-background.png" alt="Black-and-white landscape beneath a turquoise sky" />
+
+        <img class="home-word-group home-word-group--paper" src="./public/home-paper-group.png" alt="Paper with patterned lettering" />
+        <img class="home-word-group home-word-group--that" src="./public/home-that-group.png" alt="That with patterned lettering" />
+        <img class="home-word-group home-word-group--remains-pattern" src="./public/home-remains-pattern.png" alt="" />
+        <img class="home-word-group home-word-group--remains-word" src="./public/home-remains-word.png" alt="Remains" />
+
+        <div class="home-fragments" aria-label="Click the paper fragments three times to reveal the title">
+          <button class="home-fragment home-fragment--1" type="button" aria-label="Paper fragment"></button>
+          <button class="home-fragment home-fragment--2" type="button" aria-label="Paper fragment"></button>
+          <button class="home-fragment home-fragment--3" type="button" aria-label="Paper fragment"></button>
+          <button class="home-fragment home-fragment--4" type="button" aria-label="Paper fragment"></button>
+          <button class="home-fragment home-fragment--5" type="button" aria-label="Paper fragment"></button>
+          <button class="home-fragment home-fragment--6" type="button" aria-label="Paper fragment"></button>
+          <button class="home-fragment home-fragment--7" type="button" aria-label="Paper fragment"></button>
+          <button class="home-fragment home-fragment--8" type="button" aria-label="Paper fragment"></button>
+        </div>
+
+        <a class="home-start" href="./next.html" aria-label="Start the experience"></a>
+        <p class="visually-hidden" aria-live="polite" data-home-status>Click a paper fragment to reveal the title.</p>
+      </section>
+    </main>
+    <script src="./home.js" defer></script>
+  </body>
+</html>

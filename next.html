@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#ef0014" />
+    <title>Where Is Paper?</title>
+    <link rel="preload" href="./public/scene2-background.png" as="image" />
+    <link rel="prefetch" href="./third.html" as="document" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="page-shell">
+      <section class="design scene2-design" data-node-id="17:457" aria-label="Where is paper interactive scene">
+        <img class="scene2-background" src="./public/scene2-background.png" alt="" />
+        <img class="scene2-cyan" src="./public/scene2-cyan.png" alt="" />
+
+        <img class="scene2-person scene2-person--couple" src="./public/scene2-couple.png" alt="A couple holding paper products" />
+        <img class="scene2-person scene2-person--old-man" src="./public/scene2-old-man.png" alt="An older man handling paper" />
+        <img class="scene2-person scene2-person--upper-woman" src="./public/scene2-upper-woman.png" alt="A woman holding a paper object" />
+        <img class="scene2-person scene2-person--lower-woman" src="./public/scene2-lower-woman.png" alt="A woman holding a paper bag" />
+
+        <img class="scene2-title" src="./public/scene2-title.png" alt="Where is Paper?" />
+
+        <div class="scene2-description">
+          <img src="./public/scene2-description.png" alt="Paper enters daily life through carrying, wrapping, cleaning, and packaging." />
+        </div>
+
+        <img class="scene2-final-description" src="./public/scene2-final-description.png" alt="It is handled briefly and often disappears from attention very quickly." />
+
+        <button class="scene2-red-zone scene2-red-zone--couple-left" type="button" aria-label="Reveal the left paper bag"></button>
+        <button class="scene2-red-zone scene2-red-zone--couple-right" type="button" aria-label="Reveal the right paper parcel"></button>
+        <button class="scene2-red-zone scene2-red-zone--old-man" type="button" aria-label="Reveal the older man's paper"></button>
+        <button class="scene2-red-zone scene2-red-zone--upper-woman" type="button" aria-label="Reveal the upper woman's paper"></button>
+        <button class="scene2-red-zone scene2-red-zone--lower-woman" type="button" aria-label="Reveal the lower woman's paper"></button>
+
+        <p class="visually-hidden" aria-live="polite" data-scene2-status>Wait for all four people to appear.</p>
+      </section>
+    </main>
+    <script src="./scene2.js" defer></script>
+  </body>
+</html>
