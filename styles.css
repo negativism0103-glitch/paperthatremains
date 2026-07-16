@@ -13,6 +13,7 @@ body {
   min-width: 960px;
   height: 100%;
   margin: 0;
+  overflow: hidden;
 }
 
 body {
@@ -21,15 +22,24 @@ body {
 }
 
 .page-shell {
+  --page-padding: clamp(32px, 5vw, 80px);
+
   display: grid;
-  min-height: 100%;
+  width: 100%;
+  height: 100dvh;
+  min-height: 0;
   place-items: center;
-  padding: clamp(32px, 5vw, 80px);
+  padding: var(--page-padding);
 }
 
 .design {
   position: relative;
-  width: min(100%, 1440px, 118vh);
+  width: min(
+    100%,
+    1440px,
+    calc((100dvh - (2 * var(--page-padding))) * 1.315789)
+  );
+  height: auto;
   aspect-ratio: 4096 / 3113;
   overflow: hidden;
   background: #fff;
